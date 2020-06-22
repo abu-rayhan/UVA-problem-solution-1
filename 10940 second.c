@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(){
+    int n,x,s;
+    while(scanf("%d",&n)){
+        if(n==0)break;
+        x=1;
+        while(x<=n){
+            x=x*2;
+            s=x%n;
+        }
+        printf("%d\n",n-s);
+    }
+    return 0;
+}
